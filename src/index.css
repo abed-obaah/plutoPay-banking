@@ -1,0 +1,379 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    scroll-behavior: smooth;
+    background-color: #0f172a;
+    list-style: none;
+}
+.container{
+   max-width: 100vw;
+    height: 100vh;
+
+
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+
+    gap: 10px;
+    /* padding: 10px; */
+    /* margin-left: 10px; */
+
+}
+
+/* .container div{
+    border: 1px solid black
+} */
+
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 9;
+   
+}
+
+.get_started{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 2;
+    grid-row-end: 5;
+    height: 100vh;
+    /* background-color: blue; */
+}
+
+.features{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 5;
+    grid-row-end: 7;
+
+    height: 90vh;
+}
+.featuresItems li:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    display: block;
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    background-image: radial-gradient(#0a89ff 0,#04294b 70%,#04294b 100%);
+    opacity: .4;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.image__overview:before{
+    content: "";
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    z-index: 1;
+    display: block;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    background-image: radial-gradient(#0a89ff 0,#04294b 70%,#04294b 100%);
+    opacity: .5;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+/* .image__overview img{
+    z-index: 2;
+} */
+
+.featuresItems li {
+    /* border: 1px solid white;
+    padding: 18px; */
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.625rem;
+    padding: 0 2rem 6rem;
+    height: 100%;
+    text-align: center;
+    background-color: #04294b;
+}
+.featuresItems li span.featSpa{
+    position: relative;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+    max-width: 12rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.Howitworks{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 7;
+    grid-row-end:9 ;
+
+    height: 90vh;
+}
+
+.PPFeatures{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 10;
+    grid-row-end:12;
+
+    height: 90vh;
+    margin-bottom: 20em;
+}
+
+.Register{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 14;
+    grid-row-end:15;
+    height: 60vh;
+}
+
+.mobil_xperience{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 15;
+    grid-row-end:15;
+    height: 90vh;
+    display: flex;
+}
+
+.ReadTestimonies{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 16;
+    grid-row-end:17;
+    height: 50vh;
+}
+.Footer{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    grid-row-start: 17;
+    grid-row-end:18;
+    height: 68vh;
+    background-color:#18243d;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+    padding-bottom: 17px;
+    background-color:#18243d;
+}
+
+.nav {
+    display: flex;
+    
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly;
+    flex-direction: row;
+    align-content: flex-end; */
+}
+
+.nav ul li{
+ margin-left: 2rem;
+}
+
+.nav ul li:hover{
+    transition:0.3s ease-in-out
+}
+.nav li.active{
+    
+    color: #0a89ff;
+    
+}
+
+.get_started h6{
+    /* border-bottom: 1px solid gray; */
+    max-width: 150px;
+}
+
+.featSpan{
+    padding-left: 23px;
+}
+.featSpa{
+    padding-left: 12px;
+}
+
+.Featrow {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.FeatrowList
+{
+    /* margin-top: 87px; */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.margin-5-rem-bottom {
+    margin-bottom: 5rem;
+}
+
+.letter-spacing-1-half {
+    letter-spacing: 0.5px;
+}
+
+.text-gradient-light-purple-light-red {
+    background: linear-gradient( to right, #fff, rgb(244, 238, 238), #0ea5e9, #0ea5e9, #0ea5e9 );
+    background-clip: text;
+    -webkit-text-fill-color:transparent ;
+    -webkit-background-clip: text;
+}
+
+.nav ul li:hover,
+span{
+  cursor: pointer;
+}
+
+.applications__in li {
+    margin-bottom: 1.2rem;
+    border-radius: 0.625rem;
+    padding: 15px 12px 11px;
+    text-align: center;
+    color: #1e385b;
+    background-color: #eef2f9;
+    transition: .5s;
+
+}
+
+/* .applications__in li.devices__top {
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+
+} */
+
+/* about us page */
+
+.bgc{
+    background-color: #04294b;
+}
+
+.plutoPayLink{
+    margin-left: 5px;
+}
+
+/* .Footer div.footer_lin{
+    display:flex;
+    justify-content: space-around;
+} */
+
+.carousel div{
+    margin-right: 33px;
+}
+
+/* .w-56x{
+    padding-right: 19px;
+} */
+
+@media (max-width: 600px){
+    /* body{
+        background-color: #fff;
+    } */
+    
+    .image__overview,.image__overview:before{
+        display: none;
+    }
+
+    .get_started h1{
+        font-size:4em;
+    }
+
+    /* .get_started button{
+        margin: 20px 25px;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+    } */
+
+    .features{
+        margin-top: -10em;
+    }
+
+    .Howitworks{
+        margin-top: 40em
+    }
+
+    .Howitworks div img{
+        max-width:15em;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto -12em;
+    }
+
+    .Howitworks div.how_it_works_link{
+        width:14em;
+    }
+
+    .mobil_xperience{
+        flex-wrap: wrap;
+        margin-bottom: 22em;
+    }
+
+    .mobil_xperience h1{
+        width: 292px;
+    }
+
+    .carousel{
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .carousel div{
+        margin-right: 1px;
+        margin-left: 12px;
+    }
+
+    .ReadTestimonies img{
+        display: none;
+    } 
+
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+
+    .nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+
+    .mobile-menu-icon .open{
+        position: absolute;
+        display: block;
+        right: 20px;
+        margin-top: -19px;
+  }
+
+}
+
